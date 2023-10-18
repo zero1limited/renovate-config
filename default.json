@@ -1,0 +1,59 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "app/code/**",
+    "update/**"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Default",
+      "groupSlug": "default",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchDepTypes": [
+        "require"
+      ],
+      "rangeStrategy": "in-range-only" 
+    },
+    {
+      "groupName": "Magento",
+      "groupSlug": "magento",
+      "matchPackagePatterns": [
+        "^magento/"
+      ],
+      "matchDepTypes": [
+        "require"
+      ]
+    },
+    {
+      "groupName": "Major Updates",
+      "groupSlug": "major-updates",
+      "matchUpdateTypes": ["major"],
+      "matchDepTypes": [
+        "require"
+      ]
+    },
+    {
+      "groupName": "Dev Dependencies",
+      "groupSlug": "dev-dependencies",
+      "matchDepTypes": [
+        "require-dev"
+      ]
+    }
+  ],
+  "separateMajorMinor": false,
+  "prHourlyLimit": 20,
+  "enabledManagers": [
+    "composer"
+  ],
+  "ignoreDeps": [
+    "composer/composer"
+  ]
+}
