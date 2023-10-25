@@ -20,7 +20,8 @@
       "matchDepTypes": [
         "require"
       ],
-      "rangeStrategy": "in-range-only" 
+      "rangeStrategy": "in-range-only" ,
+      "enabled": false
     },
     {
       "groupName": "Magento",
