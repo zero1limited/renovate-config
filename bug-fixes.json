@@ -27,20 +27,7 @@
       "groupSlug": "magento",
       "matchPackagePatterns": [
         "^magento/"
-      ],
-      "matchDepTypes": [
-        "require"
-      ],
-      "enabled": false
-    },
-    {
-      "groupName": "Major Updates",
-      "groupSlug": "major-updates",
-      "matchUpdateTypes": ["major"],
-      "matchDepTypes": [
-        "require"
-      ],
-      "enabled": false
+      ]
     },
     {
       "groupName": "Dev Dependencies",
@@ -51,7 +38,7 @@
       "enabled": false
     }
   ],
-  "separateMajorMinor": false,
+  "separateMajorMinor": true,
   "prHourlyLimit": 20,
   "enabledManagers": [
     "composer"
