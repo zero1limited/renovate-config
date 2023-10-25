@@ -12,8 +12,8 @@
   ],
   "packageRules": [
     {
-      "groupName": "Default",
-      "groupSlug": "default",
+      "groupName": "Bug Fixes",
+      "groupSlug": "bug-fixes",
       "matchPackagePatterns": [
         "*"
       ],
@@ -28,27 +28,17 @@
       "matchPackagePatterns": [
         "^magento/"
       ],
-      "matchDepTypes": [
-        "require"
-      ]
-    },
-    {
-      "groupName": "Major Updates",
-      "groupSlug": "major-updates",
-      "matchUpdateTypes": ["major"],
-      "matchDepTypes": [
-        "require"
-      ]
+      "enabled": false
     },
     {
       "groupName": "Dev Dependencies",
       "groupSlug": "dev-dependencies",
       "matchDepTypes": [
         "require-dev"
-      ]
+      ],
+      "enabled": false
     }
   ],
-  "separateMajorMinor": false,
   "prHourlyLimit": 20,
   "enabledManagers": [
     "composer"
