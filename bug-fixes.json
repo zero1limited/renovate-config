@@ -12,6 +12,17 @@
   ],
   "packageRules": [
     {
+      "groupName": "Bug Fixes",
+      "groupSlug": "bug-fixes",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchDepTypes": [
+        "require"
+      ],
+      "rangeStrategy": "in-range-only" 
+    },
+    {
       "groupName": "Magento",
       "groupSlug": "magento",
       "matchPackagePatterns": [
