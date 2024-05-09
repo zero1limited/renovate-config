@@ -15,28 +15,14 @@
       "groupName": "Bug Fixes",
       "groupSlug": "bug-fixes",
       "matchPackagePatterns": [
-        "*"
+        "!/^hyva\//",
+        "!/^hyva-themes\//",
+        "!/^magento\//"
       ],
       "matchDepTypes": [
         "require"
       ],
       "rangeStrategy": "in-range-only" 
-    },
-    {
-      "groupName": "Magento",
-      "groupSlug": "magento",
-      "matchPackagePatterns": [
-        "^magento/"
-      ],
-      "enabled": false
-    },
-    {
-      "groupName": "Dev Dependencies",
-      "groupSlug": "dev-dependencies",
-      "matchDepTypes": [
-        "require-dev"
-      ],
-      "enabled": false
     }
   ],
   "prHourlyLimit": 20,
