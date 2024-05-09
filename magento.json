@@ -37,15 +37,6 @@
         "require-dev"
       ],
       "enabled": false
-    },
-    {
-      "groupName": "Hyva",
-      "groupSlug": "hyva",
-      "matchPackagePatterns": [
-        "^hyva/",
-        "^hyva-themes/"
-      ],
-      "enabled": false
     }
   ],
   "prHourlyLimit": 20,
